@@ -2,4 +2,6 @@
 # https://github.com/felangel/mason
 bricks:
   ddd:
-    path: bricks/ddd
+    git:
+       url: https://github.com/TinhHuynh/ddd.git
+       path: bricks/ddd

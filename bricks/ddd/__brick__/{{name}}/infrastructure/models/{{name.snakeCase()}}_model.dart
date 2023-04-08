@@ -7,11 +7,11 @@ part '{{name.snakeCase()}}_model.freezed.dart';
 part '{{name.snakeCase()}}_model.g.dart';
 
 @freezed
-class {{name.pascalCase()}}Model with _${{name.pascalCase()}}Model implements I{{name.pascalCase()}} {
+class Ct{{name.pascalCase()}}Model with _$Ct{{name.pascalCase()}}Model implements ICt{{name.pascalCase()}} {
   @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
-  const factory {{name.pascalCase()}}Model({
+  const factory Ct{{name.pascalCase()}}Model({
     @JsonKey(name: 'id') @Default(-1) int id,
-  }) = _{{name.pascalCase()}}Model;
+  }) = _Ct{{name.pascalCase()}}Model;
 
-  factory {{name.pascalCase()}}Model.fromJson(json) => _${{name.pascalCase()}}ModelFromJson(json);
+  factory Ct{{name.pascalCase()}}Model.fromJson(json) => _$Ct{{name.pascalCase()}}ModelFromJson(json);
 }

@@ -8,12 +8,12 @@ import '../../../../core/infrastructure/datasources/remote/api/base/api_error.da
 import '../../../{{name.snakeCase()}}/domain/entities/{{name.snakeCase()}}.dart';
 
 @LazySingleton(
-  as: I{{name.pascalCase()}}Repository,
+  as: ICt{{name.pascalCase()}}Repository,
   env: AppEnvironment.environments,
 )
-class {{name.pascalCase()}}Repository implements I{{name.pascalCase()}}Repository {
+class Ct{{name.pascalCase()}}Repository implements ICt{{name.pascalCase()}}Repository {
   @override
-  Future<Either<ApiError, I{{name.pascalCase()}}>> getById(int id, {CancelToken? token}) async {
+  Future<Either<ApiError, ICt{{name.pascalCase()}}>> getById(int id, {CancelToken? token}) async {
     // TODO: implement getById
     throw UnimplementedError();
   }

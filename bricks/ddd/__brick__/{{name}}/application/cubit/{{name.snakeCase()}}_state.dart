@@ -1,7 +1,7 @@
 part of '{{name.snakeCase()}}_cubit.dart';
 
 @generate
-enum {{name.pascalCase()}}Status {
+enum Ct{{name.pascalCase()}}Status {
   initial,
   loading,
   error,
@@ -10,27 +10,27 @@ enum {{name.pascalCase()}}Status {
 
 
 @freezed
-class {{name.pascalCase()}}State with _${{name.pascalCase()}}State {
-  const {{name.pascalCase()}}State._();
+class Ct{{name.pascalCase()}}State with _$Ct{{name.pascalCase()}}State {
+  const Ct{{name.pascalCase()}}State._();
 
-  const factory {{name.pascalCase()}}State({
-    @Default({{name.pascalCase()}}Status.initial) {{name.pascalCase()}}Status status,
-    I{{name.pascalCase()}}? data,
+  const factory Ct{{name.pascalCase()}}State({
+    @Default(Ct{{name.pascalCase()}}Status.initial) Ct{{name.pascalCase()}}Status status,
+    ICt{{name.pascalCase()}}? data,
     ApiError? error,
-  }) = _{{name.pascalCase()}}State;
+  }) = _Ct{{name.pascalCase()}}State;
 
 }
 
-extension {{name.pascalCase()}}StateX on {{name.pascalCase()}}State {
-  {{name.pascalCase()}}State get loading => copyWith(status: {{name.pascalCase()}}Status.loading);
+extension Ct{{name.pascalCase()}}StateX on Ct{{name.pascalCase()}}State {
+  Ct{{name.pascalCase()}}State get loading => copyWith(status: Ct{{name.pascalCase()}}Status.loading);
 
-  {{name.pascalCase()}}State onError(ApiError error) => copyWith(
-        status: {{name.pascalCase()}}Status.error,
+  Ct{{name.pascalCase()}}State onError(ApiError error) => copyWith(
+        status: Ct{{name.pascalCase()}}Status.error,
         error: error,
       );
 
-  {{name.pascalCase()}}State onLoaded(I{{name.pascalCase()}} data) => copyWith(
-        status: {{name.pascalCase()}}Status.loaded,
+  Ct{{name.pascalCase()}}State onLoaded(ICt{{name.pascalCase()}} data) => copyWith(
+        status: Ct{{name.pascalCase()}}Status.loaded,
         data: data,
       );
 }

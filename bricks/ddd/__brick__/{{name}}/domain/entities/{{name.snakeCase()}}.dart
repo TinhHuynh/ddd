@@ -1,3 +1,3 @@
-abstract class I{{name.pascalCase()}} {
+abstract class ICt{{name.pascalCase()}} {
   int get id;
 }

@@ -1,6 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:enum_annotation/enum_annotation.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../../../core/infrastructure/datasources/remote/api/base/api_error.dart';
@@ -13,9 +12,9 @@ part '{{name.snakeCase()}}_cubit.freezed.dart';
 part '{{name.snakeCase()}}_cubit.g.dart';
 
 @injectable
-class {{name.pascalCase()}}Cubit extends Cubit<{{name.pascalCase()}}State> with CancelableBaseBloc {
-  final I{{name.pascalCase()}}Repository _repository;
-  {{name.pascalCase()}}Cubit(this._repository) : super(const {{name.pascalCase()}}State());
+class Ct{{name.pascalCase()}}Cubit extends Cubit<Ct{{name.pascalCase()}}State> with CancelableBaseBloc {
+  final ICt{{name.pascalCase()}}Repository _repository;
+  Ct{{name.pascalCase()}}Cubit(this._repository) : super(const Ct{{name.pascalCase()}}State());
 
   get() async {
     emit(state.loading);
