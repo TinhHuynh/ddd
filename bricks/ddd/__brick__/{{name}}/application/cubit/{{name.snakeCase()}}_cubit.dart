@@ -9,7 +9,6 @@ import '../../domain/interfaces/{{name.snakeCase()}}_interface.dart';
 
 part '{{name.snakeCase()}}_state.dart';
 part '{{name.snakeCase()}}_cubit.freezed.dart';
-part '{{name.snakeCase()}}_cubit.g.dart';
 
 @injectable
 class Ct{{name.pascalCase()}}Cubit extends Cubit<Ct{{name.pascalCase()}}State> with CancelableBaseBloc {
