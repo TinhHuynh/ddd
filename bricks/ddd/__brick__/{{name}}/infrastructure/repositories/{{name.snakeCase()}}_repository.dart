@@ -12,9 +12,4 @@ import '../../../{{name.snakeCase()}}/domain/entities/{{name.snakeCase()}}.dart'
   env: AppEnvironment.environments,
 )
 class Ct{{name.pascalCase()}}Repository implements ICt{{name.pascalCase()}}Repository {
-  @override
-  Future<Either<ApiError, ICt{{name.pascalCase()}}>> getById(int id, {CancelToken? token}) async {
-    // TODO: implement getById
-    throw UnimplementedError();
-  }
 }

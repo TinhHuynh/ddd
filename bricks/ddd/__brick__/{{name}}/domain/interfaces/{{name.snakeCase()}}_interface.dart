@@ -5,6 +5,5 @@ import '../../../../core/infrastructure/datasources/remote/api/base/api_error.da
 import '../../../{{name.snakeCase()}}/domain/entities/{{name.snakeCase()}}.dart';
 
 abstract class ICt{{name.pascalCase()}}Repository {
- Future<Either<ApiError, ICt{{name.pascalCase()}}>> getById(int id, {CancelToken? token});
 }
 

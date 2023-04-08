@@ -11,8 +11,4 @@ import '../../../{{name.snakeCase()}}/infrastructure/models/{{name.snakeCase()}}
 @alpha
 @LazySingleton(as: ICt{{name.pascalCase()}}Repository)
 class Ct{{name.pascalCase()}}MockupRepository implements ICt{{name.pascalCase()}}Repository {
-  @override
-  Future<Either<ApiError, ICt{{name.pascalCase()}}>> getById(int id, {CancelToken? token}) async {
-    return right(const Ct{{name.pascalCase()}}Model());
-  }
 }
